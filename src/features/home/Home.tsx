@@ -36,25 +36,26 @@ const Home = () => {
           <Grid container spacing={4}>
             {[
               {
-                icon: '🏥',
-                title: 'Health Insurance',
-                description: 'Comprehensive health coverage for you and your family.',
-              },
-              {
                 icon: '🚗',
-                title: 'Auto Insurance',
+                title: 'Motor Insurance',
                 description: 'Protect your vehicle with our reliable auto insurance plans.',
               },
               {
-                icon: '🏠',
-                title: 'Home Insurance',
-                description: 'Safeguard your home and belongings with our tailored plans.',
+                icon: '🏥',
+                title: 'Health Insurance',
+                description: 'Comprehensive health coverage for you and your family.',
               },
               {
                 icon: '👨‍👩‍👧‍👦',
                 title: 'Life Insurance',
                 description: 'Secure your family’s future with our life insurance solutions.',
               },
+              {
+                icon: '🏠',
+                title: 'Home Insurance',
+                description: 'Safeguard your home and belongings with our tailored plans.',
+              },
+
             ].map((service, index) => (
               <Grid item key={index} xs={12} sm={6} md={3}>
                 <Card sx={{ height: '100%', textAlign: 'center', p: 3, boxShadow: 3, '&:hover': { boxShadow: 6, transform: 'translateY(-4px)', transition: 'all 0.3s ease' } }}>

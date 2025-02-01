@@ -43,6 +43,17 @@ const Contact: React.FC = () => {
                     required
                   />
 
+
+                  {/* Mobile Number */}
+                  <TextField
+                    name="mobile"
+                    label="Your Mobile"
+                    type="tel"
+                    variant="outlined"
+                    fullWidth
+                    required
+                  />
+
                   {/* Email Field */}
                   <TextField
                     name="email"
@@ -50,7 +61,6 @@ const Contact: React.FC = () => {
                     type="email"
                     variant="outlined"
                     fullWidth
-                    required
                   />
 
                   {/* Message Field */}
@@ -100,9 +110,9 @@ const Contact: React.FC = () => {
                     Address
                   </Typography>
                   <Typography variant="body1" sx={{ color: '#666' }}>
-                    123 Future Guard Lane, Suite 456
+                    Zero Mile Gate No. 1, Bari Pahari, Sampatchak
                     <br />
-                    New York, NY 10001
+                    Patna - 80007
                   </Typography>
                 </Box>
 
@@ -112,7 +122,7 @@ const Contact: React.FC = () => {
                     Phone
                   </Typography>
                   <Typography variant="body1" sx={{ color: '#666' }}>
-                    +1 (123) 456-7890
+                    +91 - 9534647286
                   </Typography>
                 </Box>
 
@@ -122,20 +132,13 @@ const Contact: React.FC = () => {
                     Email
                   </Typography>
                   <Typography variant="body1" sx={{ color: '#666' }}>
-                    info@futureguard.com
+                    patnaimf@gmail.com
                   </Typography>
                 </Box>
 
                 {/* Embedded Google Map */}
                 <Box sx={{ height: '300px', borderRadius: 2, overflow: 'hidden' }}>
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.183792579763!2d-73.9877316845936!3d40.74844047932787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25903f2b3f3a1%3A0x4b1c3e6b5f6e4f4d!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1633021234567!5m2!1sen!2sus"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                  ></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.568381066123!2d85.18531707485016!3d25.586022815843116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58aae91ee8af%3A0x3feea4993233e9d7!2sZero%20Mile!5e0!3m2!1sen!2sin!4v1738427943282!5m2!1sen!2sin" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </Box>
               </CardContent>
             </Card>
