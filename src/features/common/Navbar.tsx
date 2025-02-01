@@ -49,12 +49,11 @@ function Navbar() {
     <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <SecurityIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <SecurityIcon onClick={() => handleNavigate("/")} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -64,8 +63,9 @@ function Navbar() {
               color: 'inherit',
               textDecoration: 'none',
             }}
+            onClick={() => handleNavigate("/")}
           >
-            Future Gaurd
+            Future Guard
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -102,12 +102,11 @@ function Navbar() {
               ))}
             </Menu>
           </Box>
-          <SecurityIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <SecurityIcon onClick={() => handleNavigate("/")} sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -118,6 +117,7 @@ function Navbar() {
               color: 'inherit',
               textDecoration: 'none',
             }}
+            onClick={() => handleNavigate("/")}
           >
             Future Gaurd
           </Typography>
@@ -132,7 +132,7 @@ function Navbar() {
               </Button>
             ))}
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -160,7 +160,7 @@ function Navbar() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
