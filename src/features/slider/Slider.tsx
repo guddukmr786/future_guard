@@ -22,7 +22,7 @@ const Slider = () => {
         sx={{
           position: "relative",
           width: "100%",
-          height: { xs: "50vh", sm: "60vh", md: "70vh" },
+          height: '500px', // Fixed height for the container
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -36,7 +36,9 @@ const Slider = () => {
           sx={{
             width: "100%",
             height: "100%",
-            objectFit: "cover",
+            objectFit: "cover", // Ensures the image covers the container without distortion
+            minHeight: "600px", // Ensures the image is at least 400px tall
+            maxHeight: "700px", // Ensures the image is at most 500px tall
           }}
         />
       </Box>

@@ -1,4 +1,5 @@
 import { Box, Typography, Grid, Card, CardContent, Button, Container } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 const services = [
   {
     icon: '🏥',
@@ -21,8 +22,12 @@ const services = [
     description: 'Secure your family’s future with our life insurance solutions.',
   },
 ];
-const Services = () => (
-  <Container sx={{ textAlign: "center", py: 5, height: '84.6vh' }}>
+const Services = () => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate("/contact-us");
+  }
+  return (
     <Box sx={{ backgroundColor: '#f8f9fa', py: 8 }}>
       {/* Hero Section */}
       <Container maxWidth="lg" sx={{ textAlign: 'center', mb: 6 }}>
@@ -88,11 +93,12 @@ const Services = () => (
             backgroundColor: '#0d47a1',
             '&:hover': { backgroundColor: '#1565c0' },
           }}
+          onClick={handleClick}
         >
           Get a Quote
         </Button>
       </Container>
     </Box>
-  </Container>
-);
+  );
+}
 export default Services;

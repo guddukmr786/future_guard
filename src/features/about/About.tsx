@@ -1,7 +1,12 @@
 import React from 'react';
 import { Box, Typography, Container, Grid, Card, CardContent, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const About: React.FC = () => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate("/contact-us");
+  }
   return (
     <Box sx={{ backgroundColor: '#f8f9fa', py: 8 }}>
       <Container maxWidth="lg">
@@ -99,6 +104,8 @@ const About: React.FC = () => {
               '&:hover': { backgroundColor: '#1565c0' },
               px: 6,
             }}
+            onClick={handleClick}
+
           >
             Get Started
           </Button>
